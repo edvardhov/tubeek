@@ -237,6 +237,9 @@ function CompletionScreen({
         <h2 className="text-xl font-bold text-text">
           {mastery >= 80 ? "Crushed it." : mastery >= 50 ? "Solid run." : "Good start."}
         </h2>
+        <p className="text-xs text-text-muted">
+          You tested yourself on {stats.total} questions from this video.
+        </p>
       </div>
 
       <MasteryRing mastery={mastery} />

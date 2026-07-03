@@ -8,7 +8,7 @@
     "cards": [
       {
         "question": "What is Tubeek?",
-        "answer": "A local-first app that turns YouTube videos into interactive flashcard decks using a local LLM."
+        "answer": "An app that reads a YouTube video's transcript and generates questions with answers grounded in what the video said — so you can test whether you understood it."
       },
       {
         "question": "What frontend stack does Tubeek use?",
@@ -23,8 +23,8 @@
         "answer": "It uses youtube-transcript-api to fetch publicly available captions from YouTube's internal endpoint."
       },
       {
-        "question": "How are flashcards generated?",
-        "answer": "The transcript is sent to Ollama with a JSON schema constraint, forcing structured question-answer output."
+        "question": "How are questions generated?",
+        "answer": "The video transcript is sent to Ollama with a JSON schema constraint. The model writes question-answer pairs based on the content of what was said."
       },
       {
         "question": "What is demo mode?",

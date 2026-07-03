@@ -27,7 +27,11 @@ export function UrlForm({
   return (
     <div className="w-full max-w-xl space-y-5">
       <div className="rounded-2xl border border-border bg-surface p-5 shadow-sm">
-        <p className="mb-3 text-sm font-medium text-text">Start with a video</p>
+        <p className="mb-1 text-sm font-medium text-text">Paste a video to quiz from</p>
+        <p className="mb-3 text-xs leading-relaxed text-text-muted">
+          Tubeek pulls the transcript and builds questions about the content — each answer
+          comes from what the video said.
+        </p>
         <form
           onSubmit={(event) => {
             event.preventDefault();
@@ -52,7 +56,7 @@ export function UrlForm({
             disabled={loading || !value.trim()}
             className="w-full rounded-xl border border-accent bg-accent px-5 py-3 text-sm font-semibold text-accent-fg transition hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-50"
           >
-            {loading ? "Building your deck…" : "Generate flashcards"}
+            {loading ? "Writing questions from transcript…" : "Generate Q&A from video"}
           </button>
         </form>
       </div>
@@ -75,7 +79,7 @@ export function UrlForm({
                 className="rounded-xl border border-border bg-surface px-3 py-3 text-left text-xs transition hover:border-accent hover:bg-surface-muted disabled:opacity-50"
               >
                 <span className="block font-semibold text-text">{sample.label}</span>
-                <span className="mt-1 block text-text-subtle">8 cards · 1-click</span>
+                <span className="mt-1 block text-text-subtle">8 questions · 1-click</span>
               </button>
             ))}
           </div>

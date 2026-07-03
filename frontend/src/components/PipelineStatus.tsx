@@ -6,7 +6,7 @@ import type { PipelineStep } from "@/lib/types";
 
 const STEPS: { key: PipelineStep; label: string }[] = [
   { key: "fetching_transcript", label: "Fetching transcript" },
-  { key: "generating_cards", label: "Generating flashcards" },
+  { key: "generating_cards", label: "Writing Q&A from transcript" },
   { key: "complete", label: "Ready" },
 ];
 

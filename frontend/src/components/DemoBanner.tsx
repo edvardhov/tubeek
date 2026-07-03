@@ -12,7 +12,7 @@ export function DemoBanner() {
         <span className="rounded-md border border-border bg-surface-muted px-2 py-0.5 font-medium uppercase tracking-wider text-text-muted">
           Demo
         </span>
-        <span className="text-text-muted">Sample decks · no backend required</span>
+        <span className="text-text-muted">Sample Q&A decks · no backend required</span>
         <span className="hidden text-text-subtle sm:inline">·</span>
         <a
           href="https://github.com/edvardhov/tubeek#quickstart"

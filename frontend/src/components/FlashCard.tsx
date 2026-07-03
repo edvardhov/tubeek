@@ -138,7 +138,7 @@ export function FlashCard({
                 {card.question}
               </p>
               <p className="text-center text-[11px] text-text-subtle">
-                Tap to reveal the answer
+                Answer is based on what the video said · tap to reveal
               </p>
             </div>
           </div>

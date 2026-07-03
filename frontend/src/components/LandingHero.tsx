@@ -6,18 +6,18 @@ import { APP_MODE } from "@/lib/deck-source/index";
 const steps = [
   {
     step: "1",
-    title: "Paste a link",
-    body: "Drop any YouTube URL with captions enabled.",
+    title: "Paste a video",
+    body: "Any YouTube link with captions — lectures, tutorials, talks.",
   },
   {
     step: "2",
-    title: "Transcript → cards",
-    body: "Ollama reads the transcript and builds Q&A pairs.",
+    title: "Transcript → Q&A",
+    body: "Ollama reads what was said and writes questions with answers from that content.",
   },
   {
     step: "3",
-    title: "Swipe & learn",
-    body: "Flip cards, swipe right when you know it, left to review.",
+    title: "Test yourself",
+    body: "Flip to check your answer. Swipe right if you knew it, left to review.",
   },
 ];
 
@@ -66,7 +66,7 @@ export function CardPreview() {
         <p className="text-center text-xs leading-snug text-text">
           What is a neural network?
         </p>
-        <span className="text-center text-[10px] text-text-subtle">Tap to flip</span>
+        <span className="text-center text-[10px] text-text-subtle">From the video · tap to flip</span>
       </div>
     </motion.div>
   );
@@ -95,8 +95,8 @@ export function LandingHero({ modeLabel }: LandingHeroProps) {
           transition={{ delay: 0.05, duration: 0.4 }}
           className="text-4xl font-bold tracking-tight text-text sm:text-5xl"
         >
-          YouTube → flashcards
-          <span className="block text-accent">in one paste.</span>
+          Quiz yourself on
+          <span className="block text-accent">what the video taught.</span>
         </motion.h1>
 
         <motion.p
@@ -105,8 +105,9 @@ export function LandingHero({ modeLabel }: LandingHeroProps) {
           transition={{ delay: 0.1, duration: 0.4 }}
           className="max-w-md text-sm leading-relaxed text-text-muted sm:text-base"
         >
-          Tubeek turns lecture videos into swipeable study decks — generated on your
-          machine with Ollama. No YouTube API key, no cloud.
+          Tubeek reads a video&apos;s transcript and generates questions — with answers
+          grounded in what was actually said. A quick way to check whether you understood
+          the material, running entirely on your machine.
         </motion.p>
 
         <motion.ul
@@ -115,7 +116,7 @@ export function LandingHero({ modeLabel }: LandingHeroProps) {
           transition={{ delay: 0.18, duration: 0.4 }}
           className="flex flex-wrap items-center justify-center gap-2 sm:justify-start"
         >
-          {["Local LLM", "Auto captions", "Flip & swipe"].map((tag) => (
+          {["From transcript", "Q&A pairs", "Self-test"].map((tag) => (
             <li
               key={tag}
               className="rounded-md border border-border bg-surface-muted px-2.5 py-1 text-[11px] font-medium text-text-muted"
@@ -132,5 +133,5 @@ export function LandingHero({ modeLabel }: LandingHeroProps) {
 }
 
 export function getModeLabel() {
-  return APP_MODE === "demo" ? "Demo — sample decks" : "Local-first";
+  return APP_MODE === "demo" ? "Demo — sample Q&A" : "Local-first";
 }

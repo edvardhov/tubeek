@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tubeek — YouTube to Flashcards",
+  title: "Tubeek — Q&A from YouTube videos",
   description:
-    "Local-first app that turns YouTube videos into interactive flashcard decks using Ollama.",
+    "Generate questions and answers from a video's transcript. Test yourself on what a lecture or tutorial actually taught — powered by Ollama, locally.",
 };
 
 export default function RootLayout({

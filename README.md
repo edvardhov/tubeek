@@ -4,8 +4,8 @@
     <img src="docs/logo-light.svg" alt="Tubeek" width="220" height="50" />
   </picture>
   <br /><br />
-  <strong>YouTube → swipeable flashcards</strong> — generated locally with Ollama.<br/>
-  No YouTube API key. No cloud LLM.
+  <strong>Q&A from any YouTube video</strong> — questions and answers grounded in the transcript.<br/>
+  Generated locally with Ollama. No YouTube API key. No cloud LLM.
 </p>
 
 <p align="center">
@@ -22,10 +22,16 @@
 
 ## What it does
 
-Paste a YouTube URL with captions enabled. Tubeek fetches the transcript, asks a local LLM to build Q&A pairs, and opens an interactive deck you can flip and swipe through.
+Tubeek is a **self-quiz tool for videos**. Paste a YouTube URL with captions enabled and it:
+
+1. **Fetches the transcript** — what was actually said in the video
+2. **Generates Q&A pairs** — a local LLM turns that content into questions, each with an answer drawn from the transcript
+3. **Lets you test yourself** — flip to reveal the answer, swipe to track what you knew
+
+It is not a generic flashcard app. Every question is meant to check whether you understood **that specific video** — lectures, tutorials, explainers, talks.
 
 - **Local-first** — transcript scraping + Ollama inference stay on your machine
-- **Demo mode** — try sample decks with zero backend (used for [GitHub Pages demo](https://edvardhov.github.io/tubeek/))
+- **Demo mode** — try pre-built Q&A decks with zero backend ([GitHub Pages demo](https://edvardhov.github.io/tubeek/))
 - **Live mode** — full pipeline via FastAPI + Ollama
 
 ## Architecture
@@ -171,7 +177,7 @@ cd frontend
 npm run dev
 ```
 
-Open http://localhost:3000, paste a YouTube URL with captions, and generate a deck.
+Open http://localhost:3000, paste a YouTube URL with captions, and generate questions from the video.
 
 ### 4. Docker (optional)
 
