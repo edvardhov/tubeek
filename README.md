@@ -1,10 +1,9 @@
 <p align="center">
-  <img src="frontend/src/app/icon.svg" alt="Tubeek logo" width="72" height="72" />
-</p>
-
-<h1 align="center">Tubeek</h1>
-
-<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.svg">
+    <img src="docs/logo-light.svg" alt="Tubeek" width="220" height="50" />
+  </picture>
+  <br /><br />
   <strong>YouTube → swipeable flashcards</strong> — generated locally with Ollama.<br/>
   No YouTube API key. No cloud LLM.
 </p>

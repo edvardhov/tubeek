@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 44" width="196" height="44" role="img" aria-label="Tubeek">
+  <rect x="12" y="2" width="28" height="36" rx="8" fill="#1a6b5c" opacity="0.28" transform="rotate(8 26 20)"/>
+  <rect x="5" y="5" width="28" height="36" rx="8" fill="#1a6b5c"/>
+  <path d="M14 15.5 L24 22.5 L14 29.5 Z" fill="#ffffff" stroke-linejoin="round"/>
+  <text x="46" y="31" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700" letter-spacing="-0.02em">
+    <tspan fill="#1a1814">Tub</tspan><tspan fill="#1a6b5c">ee</tspan><tspan fill="#1a1814">k</tspan>
+  </text>
+</svg>
