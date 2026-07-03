@@ -35,16 +35,13 @@ export function DeckView({ result, onBack }: DeckViewProps) {
             </button>
             <div className="min-w-0">
               <p className="truncate text-sm font-semibold text-text">{result.deck.title}</p>
-              <p className="truncate text-[11px] text-text-subtle">
-                Questions from this video&apos;s transcript
-              </p>
               <a
                 href={result.video.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex max-w-full items-center gap-0.5 truncate text-[11px] text-text-subtle transition hover:text-accent"
               >
-                <span className="truncate">Watch source</span>
+                <span className="truncate">Watch source · Q&A from transcript</span>
                 <HiExternalLink className="shrink-0 text-[10px]" />
               </a>
             </div>

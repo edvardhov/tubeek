@@ -1,5 +1,5 @@
 import { assetPath, type DeckSource } from "@/lib/deck-source/index";
-import type { BackendStatus, DeckResult, PipelineStep } from "@/lib/types";
+import type { AppError, BackendStatus, DeckResult, PipelineStep } from "@/lib/types";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -30,9 +30,15 @@ export const SAMPLE_VIDEOS: SampleVideo[] = [
 const FALLBACK_FIXTURE = "sample-deck.json";
 
 async function loadFixture(filename: string): Promise<DeckResult> {
-  const response = await fetch(assetPath(`/demo/${filename}`));
+  const path = assetPath(`/demo/${filename}`);
+  const response = await fetch(path);
   if (!response.ok) {
-    throw new Error(`Demo fixture not found: ${filename}`);
+    const error: AppError = {
+      code: "UNKNOWN",
+      message: "Demo deck could not be loaded.",
+      detail: `Expected fixture at ${path}. Rebuild with NEXT_PUBLIC_APP_MODE=demo (see README).`,
+    };
+    throw error;
   }
   return response.json() as Promise<DeckResult>;
 }

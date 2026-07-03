@@ -9,6 +9,7 @@ import { getModeLabel, HowItWorks, LandingHero } from "@/components/LandingHero"
 import { Logo } from "@/components/Logo";
 import { PipelineStatus } from "@/components/PipelineStatus";
 import { UrlForm } from "@/components/UrlForm";
+import { APP_MODE } from "@/lib/deck-source/index";
 import { getDeckSource, SAMPLE_VIDEOS } from "@/lib/deck-source/provider";
 import type {
   AppError,
@@ -85,9 +86,9 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-0 flex-1 flex-col overflow-hidden bg-bg">
+    <main className="flex min-h-0 flex-1 flex-col overflow-y-auto bg-bg">
       <AppHeader left={<Logo markClassName="h-8 w-8" />} />
-      <div className="mx-auto flex min-h-0 w-full max-w-4xl flex-1 flex-col items-center justify-center gap-4 overflow-hidden px-4 py-2">
+      <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 px-4 py-4 pb-6">
         <LandingHero modeLabel={getModeLabel()} />
 
         <UrlForm
@@ -106,7 +107,7 @@ export default function Home() {
 
         {error && <ErrorPanel error={error} backendStatus={backendStatus} />}
 
-        {backendStatus && backendStatus.status !== "ok" && (
+        {APP_MODE !== "demo" && backendStatus && backendStatus.status !== "ok" && (
           <div className="w-full max-w-xl rounded-xl border border-border bg-surface p-4 text-xs text-text-muted">
             {backendStatus.ollama !== "ok" && (
               <p>Ollama offline — start it locally to generate live decks.</p>
@@ -123,7 +124,7 @@ export default function Home() {
         )}
 
         {!isLoading && step === "idle" && !error && (
-          <div className="how-it-works-section hidden w-full shrink-0 lg:block">
+          <div className="w-full shrink-0">
             <HowItWorks />
           </div>
         )}

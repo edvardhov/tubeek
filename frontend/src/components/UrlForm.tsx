@@ -26,7 +26,7 @@ export function UrlForm({
 }: UrlFormProps) {
   return (
     <div className="w-full max-w-xl space-y-5">
-      <div className="rounded-2xl border border-border bg-surface p-5 shadow-sm">
+      <div className="rounded-2xl border border-border bg-surface p-5">
         <p className="mb-1 text-sm font-medium text-text">Paste a video to quiz from</p>
         <p className="mb-3 text-xs leading-relaxed text-text-muted">
           Tubeek pulls the transcript and builds questions about the content — each answer

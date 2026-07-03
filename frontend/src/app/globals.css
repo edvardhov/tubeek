@@ -80,12 +80,6 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-@media (max-height: 860px) {
-  .how-it-works-section {
-    display: none;
-  }
-}
-
 ::selection {
   background: color-mix(in srgb, var(--accent) 25%, transparent);
 }

@@ -50,16 +50,13 @@ export function HowItWorks() {
 
 export function CardPreview() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 16, rotate: -2 }}
-      animate={{ opacity: 1, y: 0, rotate: -2 }}
-      transition={{ delay: 0.2, duration: 0.45 }}
-      className="relative mx-auto hidden h-36 w-56 sm:block"
+    <div
+      className="relative mx-auto hidden h-36 w-56 shrink-0 sm:block"
       aria-hidden="true"
     >
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border border-border bg-surface-muted" />
       <div className="absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-2xl border border-border bg-surface" />
-      <div className="absolute inset-0 flex flex-col justify-between rounded-2xl border border-border bg-surface p-4 shadow-sm">
+      <div className="absolute inset-0 flex flex-col justify-between rounded-2xl border border-border bg-surface p-4">
         <span className="text-[10px] font-medium uppercase tracking-wider text-accent">
           Question
         </span>
@@ -68,7 +65,7 @@ export function CardPreview() {
         </p>
         <span className="text-center text-[10px] text-text-subtle">From the video · tap to flip</span>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
@@ -78,7 +75,7 @@ interface LandingHeroProps {
 
 export function LandingHero({ modeLabel }: LandingHeroProps) {
   return (
-    <div className="grid w-full max-w-3xl items-center gap-8 sm:grid-cols-[1fr_auto] sm:text-left">
+    <div className="grid w-full max-w-3xl items-center gap-6 overflow-hidden sm:grid-cols-[1fr_auto] sm:gap-8 sm:text-left">
       <div className="flex flex-col items-center gap-4 text-center sm:items-start sm:text-left">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
