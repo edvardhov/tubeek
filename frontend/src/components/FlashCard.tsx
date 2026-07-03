@@ -82,13 +82,13 @@ export function FlashCard({
 
       <motion.span
         style={{ opacity: knowOpacity, scale: knowScale }}
-        className="pointer-events-none absolute right-5 top-5 z-10 rounded-lg border-2 border-accent bg-accent px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-accent-fg shadow-sm"
+        className="pointer-events-none absolute right-5 top-5 z-10 rounded-lg border-2 border-accent bg-accent px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-accent-fg"
       >
         Got it
       </motion.span>
       <motion.span
         style={{ opacity: reviewOpacity, scale: reviewScale }}
-        className="pointer-events-none absolute left-5 top-5 z-10 rounded-lg border-2 border-border bg-surface px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-text-muted shadow-sm"
+        className="pointer-events-none absolute left-5 top-5 z-10 rounded-lg border-2 border-border bg-surface px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-text-muted"
       >
         Review
       </motion.span>
@@ -113,7 +113,7 @@ export function FlashCard({
           style={{ transformStyle: "preserve-3d" }}
         >
           <div
-            className="absolute inset-0 flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-[0_8px_40px_-12px_rgba(0,0,0,0.25)] dark:shadow-[0_8px_40px_-12px_rgba(0,0,0,0.55)]"
+            className="absolute inset-0 flex flex-col overflow-hidden rounded-2xl border border-border bg-surface"
             style={{ backfaceVisibility: "hidden" }}
           >
             <div className="flex items-center justify-between border-b border-border bg-surface-muted px-5 py-3">
@@ -144,7 +144,7 @@ export function FlashCard({
           </div>
 
           <div
-            className="absolute inset-0 flex flex-col overflow-hidden rounded-2xl border-2 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.2)] dark:border dark:shadow-[0_8px_40px_-12px_rgba(0,0,0,0.55)]"
+            className="absolute inset-0 flex flex-col overflow-hidden rounded-2xl border-2 dark:border"
             style={{
               backfaceVisibility: "hidden",
               transform: "rotateY(180deg)",

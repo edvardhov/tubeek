@@ -126,7 +126,7 @@ function StudyControls({
           onClick={onReview}
           disabled={isFirstCard}
           aria-label="Review again"
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text-muted shadow-sm transition hover:border-text-subtle hover:text-text disabled:cursor-not-allowed disabled:opacity-35"
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition hover:border-text-subtle hover:text-text disabled:cursor-not-allowed disabled:opacity-35"
         >
           <HiX className="text-xl" />
         </button>
@@ -134,7 +134,7 @@ function StudyControls({
         <button
           type="button"
           onClick={onFlip}
-          className={`flex h-14 min-w-0 flex-1 flex-row items-center justify-center gap-2 rounded-2xl border px-5 shadow-sm transition ${
+          className={`flex h-14 min-w-0 flex-1 flex-row items-center justify-center gap-2 rounded-2xl border px-5 transition ${
             isFlipped
               ? "border-accent/40 bg-accent/10 text-accent"
               : "border-border bg-surface text-text-muted hover:text-text"
@@ -151,7 +151,7 @@ function StudyControls({
           type="button"
           onClick={onKnow}
           aria-label="Got it"
-          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-accent bg-accent text-accent-fg shadow-[0_4px_20px_-4px_color-mix(in_srgb,var(--accent)_55%,transparent)] transition hover:bg-accent-hover active:scale-95"
+          className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-accent bg-accent text-accent-fg transition hover:bg-accent-hover active:scale-95"
         >
           <HiCheck className="text-2xl" />
         </button>
