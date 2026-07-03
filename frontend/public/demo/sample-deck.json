@@ -1,0 +1,43 @@
+{
+  "video": {
+    "video_id": "demo0000000",
+    "url": "https://www.youtube.com/watch?v=demo0000000"
+  },
+  "deck": {
+    "title": "Tubeek Demo Deck",
+    "cards": [
+      {
+        "question": "What is Tubeek?",
+        "answer": "A local-first app that turns YouTube videos into interactive flashcard decks using a local LLM."
+      },
+      {
+        "question": "What frontend stack does Tubeek use?",
+        "answer": "Next.js with React, Tailwind CSS, Framer Motion, and React Icons."
+      },
+      {
+        "question": "What backend does Tubeek use?",
+        "answer": "FastAPI with youtube-transcript-api for captions and Ollama for card generation."
+      },
+      {
+        "question": "How does Tubeek get transcripts without an API key?",
+        "answer": "It uses youtube-transcript-api to fetch publicly available captions from YouTube's internal endpoint."
+      },
+      {
+        "question": "How are flashcards generated?",
+        "answer": "The transcript is sent to Ollama with a JSON schema constraint, forcing structured question-answer output."
+      },
+      {
+        "question": "What is demo mode?",
+        "answer": "A static build that serves pre-baked fixture decks on GitHub Pages without requiring a backend."
+      },
+      {
+        "question": "How do you swipe cards?",
+        "answer": "Drag left to review again, drag right when you know the answer. Tap to flip and reveal the answer."
+      },
+      {
+        "question": "What model does Tubeek use by default?",
+        "answer": "llama3.1:8b running locally via Ollama."
+      }
+    ]
+  }
+}

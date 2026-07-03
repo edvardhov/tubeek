@@ -1,0 +1,43 @@
+{
+  "video": {
+    "video_id": "zwibgNGe4aY",
+    "url": "https://www.youtube.com/watch?v=zwibgNGe4aY"
+  },
+  "deck": {
+    "title": "What is DNA and How Does it Work?",
+    "cards": [
+      {
+        "question": "What does DNA stand for?",
+        "answer": "Deoxyribonucleic acid — the molecule that stores genetic instructions in living cells."
+      },
+      {
+        "question": "What shape does DNA take in cells?",
+        "answer": "A double helix: two strands twisted around each other, connected by base pairs."
+      },
+      {
+        "question": "Which bases pair together in DNA?",
+        "answer": "Adenine with thymine, and guanine with cytosine."
+      },
+      {
+        "question": "Where is most DNA found in eukaryotic cells?",
+        "answer": "In the nucleus, packaged into structures called chromosomes."
+      },
+      {
+        "question": "What is a gene?",
+        "answer": "A segment of DNA that codes for a functional product, usually a protein or functional RNA."
+      },
+      {
+        "question": "What is transcription?",
+        "answer": "The process of copying a DNA sequence into messenger RNA (mRNA)."
+      },
+      {
+        "question": "What happens during translation?",
+        "answer": "Ribosomes read mRNA and assemble a chain of amino acids to build a protein."
+      },
+      {
+        "question": "Why can DNA replicate itself?",
+        "answer": "Each strand serves as a template for building a new complementary strand, preserving genetic information."
+      }
+    ]
+  }
+}

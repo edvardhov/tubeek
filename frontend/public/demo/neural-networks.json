@@ -1,0 +1,43 @@
+{
+  "video": {
+    "video_id": "aircAruvnKk",
+    "url": "https://www.youtube.com/watch?v=aircAruvnKk"
+  },
+  "deck": {
+    "title": "But what is a neural network?",
+    "cards": [
+      {
+        "question": "What is the simplest neural network building block?",
+        "answer": "A neuron that takes weighted inputs, adds a bias, and passes the result through an activation function."
+      },
+      {
+        "question": "What does the sigmoid function do?",
+        "answer": "It squashes any real number into a value between 0 and 1, useful for representing probabilities."
+      },
+      {
+        "question": "What is a hidden layer?",
+        "answer": "A layer of neurons between the input and output layers that learns intermediate representations of the data."
+      },
+      {
+        "question": "How does a network learn?",
+        "answer": "By adjusting weights and biases through backpropagation to minimize the difference between predicted and expected outputs."
+      },
+      {
+        "question": "What is the role of the cost function?",
+        "answer": "It measures how wrong the network's predictions are, giving a single number the training process tries to minimize."
+      },
+      {
+        "question": "Why use multiple layers?",
+        "answer": "Deeper networks can learn more complex patterns by composing simpler features from earlier layers."
+      },
+      {
+        "question": "What is an activation function's purpose?",
+        "answer": "It introduces non-linearity so the network can model complex relationships beyond simple linear combinations."
+      },
+      {
+        "question": "What does gradient descent do?",
+        "answer": "It iteratively steps weights in the direction that most reduces the cost function."
+      }
+    ]
+  }
+}

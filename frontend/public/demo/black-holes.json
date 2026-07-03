@@ -1,0 +1,43 @@
+{
+  "video": {
+    "video_id": "e-P5IFTqB98",
+    "url": "https://www.youtube.com/watch?v=e-P5IFTqB98"
+  },
+  "deck": {
+    "title": "Black Holes Explained – From Birth to Death",
+    "cards": [
+      {
+        "question": "What is a black hole?",
+        "answer": "A region of spacetime where gravity is so strong that nothing, not even light, can escape once it crosses the event horizon."
+      },
+      {
+        "question": "What is the event horizon?",
+        "answer": "The boundary around a black hole beyond which escape velocity exceeds the speed of light."
+      },
+      {
+        "question": "How do stellar-mass black holes typically form?",
+        "answer": "When a massive star runs out of fuel and its core collapses under gravity at the end of its life."
+      },
+      {
+        "question": "What is a singularity?",
+        "answer": "The theoretical point at the center of a black hole where density becomes infinite and known physics breaks down."
+      },
+      {
+        "question": "What is an accretion disk?",
+        "answer": "A disk of gas and dust orbiting and falling into a black hole, heated by friction and often glowing brightly."
+      },
+      {
+        "question": "What is spaghettification?",
+        "answer": "The stretching of matter into a long thin shape due to extreme tidal forces near a black hole."
+      },
+      {
+        "question": "Can black holes lose mass over time?",
+        "answer": "Yes, very slowly through Hawking radiation, though this is negligible for most astrophysical black holes."
+      },
+      {
+        "question": "How do we detect black holes if light cannot escape?",
+        "answer": "By observing their gravitational effects on nearby stars and gas, gravitational waves, and radiation from accretion disks."
+      }
+    ]
+  }
+}

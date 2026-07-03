@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #f8f7f4;
+  --surface: #ffffff;
+  --surface-muted: #f0eeea;
+  --border: #ddd9d0;
+  --text: #1a1814;
+  --text-muted: #6b6560;
+  --text-subtle: #9c9690;
+  --accent: #1a6b5c;
+  --accent-hover: #145549;
+  --accent-muted: #e8f3f0;
+  --accent-fg: #ffffff;
+  --danger: #b91c1c;
+  --danger-muted: #fef2f2;
+  --card-answer-bg: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  --card-answer-header: var(--accent);
+  --card-answer-header-fg: var(--accent-fg);
+  --card-answer-border: color-mix(in srgb, var(--accent) 55%, var(--border));
+  --card-answer-stripe: var(--accent);
+}
+
+.dark {
+  --bg: #09090b;
+  --surface: #18181b;
+  --surface-muted: #27272a;
+  --border: #3f3f46;
+  --text: #fafafa;
+  --text-muted: #d4d4d8;
+  --text-subtle: #a1a1aa;
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --accent-muted: #134e4a;
+  --accent-fg: #042f2e;
+  --danger: #f87171;
+  --danger-muted: #450a0a;
+  --card-answer-bg: var(--surface);
+  --card-answer-header: color-mix(in srgb, var(--accent) 14%, var(--surface-muted));
+  --card-answer-header-fg: var(--accent);
+  --card-answer-border: color-mix(in srgb, var(--accent) 35%, var(--border));
+  --card-answer-stripe: color-mix(in srgb, var(--accent) 70%, var(--border));
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-subtle: var(--text-subtle);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+  --color-accent-fg: var(--accent-fg);
+  --color-danger: var(--danger);
+  --color-danger-muted: var(--danger-muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+body {
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (max-height: 860px) {
+  .how-it-works-section {
+    display: none;
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
